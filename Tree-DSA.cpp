@@ -54,8 +54,6 @@ class BST
 private:
 
     node* root;
-
-
     void inorder(node* current)
     {
         if (current != nullptr)
@@ -146,9 +144,124 @@ public:
             parent->setright(newnode);
         }
     }
-
-
-
+    bool search(int val)
+    {
+        node* temp = root;
+        while (temp != nullptr)
+        {
+            if (val == temp->getdata())
+                return true;
+        }
+        else if (val < temp->getdata())
+        {
+            temp = temp->getleft();
+            }
+        else
+        {
+            temp = temp->getright();
+            }
+            return false;
+    }
+      
+    void remove(int val)
+    {
+        node* parent = nullptr;
+        node* current = root;
+        while (current != nullptr && current->getdata() != val)
+        {
+            parent = current;
+            if (val < current->getdata())
+            {
+                current = current->getleft();
+            }
+            else {
+                current = current->getright();
+            }
+        }
+        if (current == nullptr)
+        {
+            cout << "value not found " << endl;
+            return;
+        }
+        if (current->getleft() == nullptr && current->getright() == nullptr)
+        {
+            if (current == root)
+                root = nullptr;
+            else if (parent ->getleft() == current)
+                parent->setleft(nullptr);
+            else
+                parent->setright(nullptr);
+            delete current;
+        }
+        else if (current->getleft() != nullptr && current->getright() == nullptr)
+        {
+            if (current == root)
+            {
+                root = current->getleft();
+            }
+            else if (parent->getleft() == current)
+            {
+                parent->setleft(current->getleft());
+            }
+            else {
+                parent->setright(current->getleft());
+                delete current;
+            }
+        }
+        else if (current->getright() != nullptr && current->getleft() == nullptr)
+        {
+            if (root == current)
+            {
+                root = current->getright();
+            }
+            else if (parent->getleft() == current)
+            {
+                parent->setleft(current->getright());
+            }
+            else
+            {
+                parent->setright(current->getright())
+                    delete current;
+            }
+        }
+        else
+        {
+            node* successorparent = current;
+            node* successor = current ->getright();
+            while (successor->getleft() != nullptr)
+            {
+                successorparent = successor;
+                successor = successor->getleft();
+            }
+            current->setdata(successor->getdata());
+            if (successorparent->getleft() == successor)
+            {
+                successorparent->setleft(successor ->getright());
+            }
+            else {
+                successorparent->setright(successor->getright());
+                delete successor;
+            }
+        }
+        else {
+            node* preparent = current;
+            node* pre = current->getleft();
+            while (pre->getright() != nullptr)
+            {
+                preparent = pre;
+                pre = pre->getright();
+            }
+            current->setdata(pre->getdata());
+            if (preparent->getright() == pre)
+            {
+                preparent->setright(pre->getleft();
+            else {
+                preparent->setleft(pre->getleft());
+                delete pre;
+            }
+            }
+        }
+    }
     void inorder()
     {
         inorder(root);
@@ -192,6 +305,7 @@ int main()
 
 
 
+
     cout << "::Inorder Traversal:: ";
     bs.inorder();
 
@@ -209,6 +323,21 @@ int main()
     cout << "::Postorder Traversal:: ";
     bs.postorder();
 
+    cout << ":: search value::";
+    if (bs.search(80));
+    {
+        cout << " value found" << endl;
+    }
+    else 
+    cout << "value not found";
+
+    cout << "\nBefore Delete : ";
+    bs.inorder();
+
+    bs.remove(40);
+
+    cout << "\nAfter Delete : ";
+    bs.inorder();
 
     return 0;
 }
