@@ -1,5 +1,4 @@
-// doublyliniterator.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
 using namespace std;
@@ -44,7 +43,7 @@ public:
 		it.ptr = this->h;
 		return it;
 	}
-	iterator<T> insert(iterator<T> pos, const T& v)
+	iterator <T> insert(iterator <T> pos, const T& v)
 	{
 		dnode<T>* temp = new dnode<T>;
 		temp->val = v;
@@ -61,8 +60,18 @@ public:
 		it.ptr = temp;
 		return it;
 	}
-		
-	
+	iterator<T> erase_after(iterator pos)
+	{
+		dnode<T>* temp = pos.ptr->next;
+		pos.ptr->next = temp->next;
+		temp->next->prev = pos.ptr;
+		iterator<T> it;
+		it.ptr = temp->next;
+		delete temp;
+		--this->n;
+		return ++pos;
+
+	}
 
 };
 template<typename T>
