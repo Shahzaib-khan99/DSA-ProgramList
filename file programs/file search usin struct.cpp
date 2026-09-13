@@ -56,7 +56,7 @@ struct student
       if(stud.rollno == rno)
       {
          cout<<"Record found at roll number "<<rno<<". Here is the record\n";
-
+ 
          putdata(stud);
          found = 't';
         break;
