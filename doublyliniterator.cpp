@@ -57,7 +57,7 @@ public:
 		++this->n;
 
 		iterator<T> it;
-		it.ptr = temp;
+		it.ptr = temp; 
 		return it;
 	}
 	iterator<T> erase_after(iterator pos)
