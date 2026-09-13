@@ -26,11 +26,11 @@ struct student
  void getdata(student );
  void putdata(student );
  int main()
-{
+{ 
    system("cls");
    student stud;
    ofstream fout("d:\\marks.dat", ios::app);
-   char ans='y';
+   char ans='y'; 
    while(ans=='y' || ans=='Y')
    {
       getdata(stud);
