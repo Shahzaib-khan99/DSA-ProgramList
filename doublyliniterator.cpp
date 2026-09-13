@@ -1,7 +1,7 @@
 
 
 #include <iostream>
-using namespace std; 
+using namespace std;  
 template<typename T>  
 struct dnode { 
 	dnode<T>* prev; 
