@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std; 
 template<typename T>  
-struct dnode {
+struct dnode { 
 	dnode<T>* prev; 
 	dnode<T>* next;
 	T val;
