@@ -12,7 +12,7 @@ struct dnode {
 template<typename T>
 class list {
 private :
-	dnode<T>* h;
+	dnode<T>* h; 
 	int n;
 public:
 	list()
