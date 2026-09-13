@@ -4,7 +4,7 @@
 using namespace std;
 template<typename T>
 struct dnode {
-	dnode<T>* prev;
+	dnode<T>* prev; 
 	dnode<T>* next;
 	T val;
 };
