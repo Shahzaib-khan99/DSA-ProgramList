@@ -2,7 +2,7 @@
 
 #include <iostream>
 using namespace std; 
-template<typename T>
+template<typename T> 
 struct dnode {
 	dnode<T>* prev; 
 	dnode<T>* next;
