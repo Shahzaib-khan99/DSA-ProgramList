@@ -6,7 +6,7 @@ class node {
 private:
 	int data;
 	node* next;
-public:
+public: 
 	node() {
 		next = nullptr;
 	}
