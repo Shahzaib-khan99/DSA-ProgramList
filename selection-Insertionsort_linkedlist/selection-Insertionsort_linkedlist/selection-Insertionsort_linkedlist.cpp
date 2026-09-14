@@ -91,7 +91,7 @@ public:
             node* minNode = current;
             node* temp = current->getnext();
 
-            while (temp != nullptr)
+            while (temp != nullptr) 
             {
                 if (temp->getdata() < minNode->getdata())
                 {
