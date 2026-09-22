@@ -80,7 +80,7 @@ using namespace std;
         for (int i = 0; i < exp.length(); i++)
         {
             char ch = exp[i];
-
+ 
             if (ch == ' ') continue;
 
             if (std::isdigit(ch))
