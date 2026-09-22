@@ -32,7 +32,7 @@ using namespace std;
             else if (ch == ')')
             {
                 if (s.empty()) return false;
-                s.pop();
+                s.pop(); 
             }
             else if (!std::isdigit(ch) && ch != '^' && ch != '*' && ch != '/' && ch != '+' && ch != '-' && ch != ' ')
             {
