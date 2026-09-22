@@ -3,7 +3,7 @@
 #include <stack>
 #include <cmath>
 #include <sstream>
-#include <cctype>
+#include <cctype> 
 #include "Advancedcalculator.h"
 
 using namespace std;
