@@ -6,7 +6,7 @@ class HashTable
 private:
     int* table;
     int size;
-
+                    
 public:
 
     HashTable(int s)
