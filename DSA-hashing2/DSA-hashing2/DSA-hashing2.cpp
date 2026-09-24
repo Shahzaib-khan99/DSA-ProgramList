@@ -3,7 +3,7 @@ using namespace std;
 
 class HashTable
 {  
-private:
+private: 
     int* table; 
     int size;
                     
