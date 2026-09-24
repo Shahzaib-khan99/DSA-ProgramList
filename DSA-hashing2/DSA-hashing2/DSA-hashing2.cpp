@@ -75,7 +75,7 @@ public:
             int newIndex = (index + i) % size;
 
             if (table[newIndex] == key)
-            {
+            { 
                 return true;
             }
 
