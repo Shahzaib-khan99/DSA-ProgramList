@@ -48,7 +48,7 @@ public:
         cout << "Hash table is full" << endl;
     }
 
-    void quadraticprobing(int key)
+    void quadraticprobing(int key) 
     {
         int index = hashFunction(key);
 
