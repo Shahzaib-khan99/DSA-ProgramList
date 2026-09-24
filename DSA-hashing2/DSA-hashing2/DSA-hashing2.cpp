@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class HashTable
+class HashTable 
 {   
 private: 
     int* table; 
