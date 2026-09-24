@@ -107,6 +107,7 @@ int main()
     h.quadraticprobing(50);
     h.quadraticprobing(21);
     h.quadraticprobing(90);
+    h.linearProbing(33);
     h.quadraticprobing(29);
     h.display();
     cout << endl;
