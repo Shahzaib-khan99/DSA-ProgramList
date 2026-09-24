@@ -2,7 +2,7 @@
 using namespace std;
 
 class HashTable
-{  
+{   
 private: 
     int* table; 
     int size;
