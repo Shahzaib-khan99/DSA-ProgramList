@@ -7,7 +7,7 @@ private:
     int* table; 
     int size;
                     
-public:
+public   
 
     HashTable(int s)
     {
@@ -21,7 +21,7 @@ public:
     }
 
     ~HashTable()
-    {
+    { 
         delete[] table;
     }
 
