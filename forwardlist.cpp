@@ -27,7 +27,7 @@ class forwardlist
 	}
 
 	bool empty()
-	{
+	{ 
 		return h->next = nullptr;
 	}
 
