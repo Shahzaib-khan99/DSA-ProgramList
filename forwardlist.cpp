@@ -9,7 +9,7 @@ class forwardlist
 	int n;
 	public() :
 		forwardlist()
-	{
+	{ 
 		this->h = new node<T>;
 		this->h->next = nullptr;
 		this->n = 0; 
