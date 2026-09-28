@@ -3,7 +3,7 @@
 #include <iostream>
 
 template <typename T>
-class forwardlist
+class forwardlist 
 {
 	node<T>* h; 
 	int n;
