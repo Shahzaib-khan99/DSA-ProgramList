@@ -12,7 +12,7 @@ class forwardlist
 	{
 		this->h = new node<T>;
 		this->h->next = nullptr;
-		this->n = 0;
+		this->n = 0; 
 
 	}
 	void push_front(const T& v)
