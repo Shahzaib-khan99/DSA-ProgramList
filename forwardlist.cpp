@@ -8,7 +8,7 @@ class forwardlist
 	node<T>* h; 
 	int n;
 	public() :
-		forwardlist()
+		forwardlist() 
 	{ 
 		this->h = new node<T>;
 		this->h->next = nullptr;
