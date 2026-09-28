@@ -5,7 +5,7 @@
 template <typename T>
 class forwardlist
 {
-	node<T>* h;
+	node<T>* h; 
 	int n;
 	public() :
 		forwardlist()
