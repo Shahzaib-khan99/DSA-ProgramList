@@ -7,7 +7,7 @@
 #include "Advancedcalculator.h"
 
 using namespace std;
-
+ 
 
     int calculator:: prec(char op)
     {
