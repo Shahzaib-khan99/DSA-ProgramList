@@ -2,7 +2,7 @@
 #include <string>
 #include <stack>
 #include <cmath>
-#include <sstream>
+#include <sstream> 
 #include <cctype>  
 #include "Advancedcalculator.h"  
 
