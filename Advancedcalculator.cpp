@@ -45,9 +45,9 @@ using namespace std;
 
     int calculator :: usedop(int x, int y, char op)
     {
-        if (op == '^')
+        if (op == '^') 
         return std::pow(x, y);
-
+ 
         if (op == '*')
 
             return x * y;
