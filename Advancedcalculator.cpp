@@ -37,7 +37,7 @@ using namespace std;
             else if (!std::isdigit(ch) && ch != '^' && ch != '*' && ch != '/' && ch != '+' && ch != '-' && ch != ' ')
             {
                 return false;
-            }
+            } 
         }
 
         return s.empty();
