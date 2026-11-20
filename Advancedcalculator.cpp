@@ -25,7 +25,7 @@ using namespace std;
         {
             char ch = data[i];
 
-            if (ch == '(')
+            if (ch == '(') 
             {
                 s.push(ch);
             }
