@@ -8,7 +8,7 @@
   
 using namespace std; 
    
-
+ 
     int calculator:: prec(char op)
     {  
         if (op == '^') return 3; 
