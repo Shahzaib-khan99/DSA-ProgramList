@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <stack>
+#include <stack> 
 #include <cmath>
 #include <sstream>  
 #include <cctype>  
