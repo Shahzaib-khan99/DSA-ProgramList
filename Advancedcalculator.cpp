@@ -5,7 +5,7 @@
 #include <sstream>  
 #include <cctype>  
 #include "Advancedcalculator.h"  
-  
+   
 using namespace std; 
    
  
