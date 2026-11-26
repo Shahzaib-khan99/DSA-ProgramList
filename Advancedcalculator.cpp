@@ -22,7 +22,7 @@ using namespace std;
         std::stack<char> s;
 
         for (int i = 0; i < data.length(); i++)
-        {
+        { 
             char ch = data[i];
 
             if (ch == '(') 
