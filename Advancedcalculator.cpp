@@ -6,7 +6,7 @@
 #include <cctype>  
 #include "Advancedcalculator.h"  
    
-using namespace std; 
+using namespace std;  
    
  
     int calculator:: prec(char op)
